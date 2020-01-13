@@ -1,23 +1,3 @@
-// Scrivi una funzione per capire se la parola è palindroma
-
-function isPalindrome(parola)
-{
-    var parolaBase = parola.split("").reverse().join("");
-
-    if (parolaBase === parola){
-        return true;
-    } else {
-        return false;
-    }
-}
-
-var parola1 = isPalindrome("lorenzo");
-var parola2 = isPalindrome("anna");
-
-console.log(parola1);
-console.log(parola2);
-
-
 // L’utente sceglie pari o dispari e un numero da 1 a 5.
 // Generiamo un numero random (sempre da 1 a 5) per il computer.
 // Sommiamo i due numeri e
