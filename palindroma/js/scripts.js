@@ -22,14 +22,35 @@
 
 // Soluzione 2
 
-var parola = 'anna';
+var parola = prompt("inserisci una parola");
+
+var parolaOk = [];
+var parolaRev = [];
+
+var counter=0;
 
 for (var i = 0; i < parola.length; i++) {
-  console.log(parola[i]);
-  //Vorrei mettere una condizione per la quale se la prima lettera è uguale all'ultima
-  //la seconda uguale alla penultima
-  // la terza = alla terza partendo dalla fine ecc
-  if (parola[0] == parola[]) {
+  parolaOk.push(parola[i])
+}
 
+for (var i = 0; i < parola.length; i++) {
+  parolaRev.push(parola[i])
+}
+
+var reversed = parolaRev.reverse();
+
+for (var i = 0; i < parolaOk.length; i++) {
+  if (parolaOk[i] == parolaRev[i]) {
+    counter++
   }
 }
+
+if (counter == parolaOk.length) {
+  console.log("Ok! Le parole sono palindrome");
+}
+else {
+  console.log("No! Le parole non sono palindrome");
+}
+
+console.log(parolaOk);
+console.log(parolaRev);
